@@ -11,7 +11,7 @@ compile:
 jar: compile
 	gradle shadowJar
 
-run: jar
+run: 
 	echo Starting Service at:  http://localhost:9090
 	java -cp build/libs/starbucks-all.jar api.StarbucksServer
 
